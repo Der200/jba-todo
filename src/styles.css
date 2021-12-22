@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap');
+
+li {
+    list-style: none;
+}
+
+span {
+    font-size: 24px;
+    font-family: 'Zen Kurenaido', sans-serif;
+    line-height: 20px;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 600px;
+    height: auto;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    width: 100%;
+}
+
+#input-task {
+    font-size: 24px;
+    font-family: 'Zen Kurenaido', sans-serif;
+    line-height: 20px;
+    width: 80%;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+#input-task:focus::placeholder {
+    color: transparent;
+}
+
+#input-task:focus {
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    background-color: #f5f5f5;
+    placeholder: none;
+}
+
+#add-task-button {
+    width: 15%;
+    background-color: rgba(153,200,233,0.78);
+    border: 1px solid rgba(153,200,233,0.78);
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+#add-task-button:hover {
+    opacity: 0.9;
+}
+
+#add-task-button:active {
+    opacity: 0.8;
+}
+
+ul {
+    width: 100%;
+    padding: 0;
+}
+
+li > input {
+    width: 20px;
+    height: 20px;
+}
+
+li {
+    height: 25px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.task {
+    vertical-align: middle;
+    margin: 0 5px;
+    width: 95%;
+}
+
+.task__resolved {
+    text-decoration: line-through;
+}
+
+.delete-btn {
+    width: 30px;
+    height: 30px;
+    background: left 5% top 5px / 97% url("./icons/delete_icon.svg") no-repeat;
+    border: none;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    opacity: 0.5;
+}
+
+.delete-btn:active {
+    opacity: 0.8;
+}
